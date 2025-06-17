@@ -45,7 +45,7 @@ extension FoundationModelChatView {
     private func generateAnswer() async -> Void {
         self.conversation.append(ConversationContent(isUser: false, text: ""))
         
-        var temperature: Double = 0.8
+        let temperature: Double = 0.8
         var responseStream: LanguageModelSession.ResponseStream<String>
         
         do {
