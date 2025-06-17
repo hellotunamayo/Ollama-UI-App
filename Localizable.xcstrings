@@ -475,7 +475,20 @@
       }
     },
     "Foundation Model" : {
-
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Foundation Model"
+          }
+        },
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "파운데이션 모델"
+          }
+        }
+      }
     },
     "General" : {
       "extractionState" : "manual",
@@ -493,9 +506,6 @@
           }
         }
       }
-    },
-    "Hello, World!" : {
-
     },
     "Hide Advanced Options" : {
       "localizations" : {
@@ -738,6 +748,28 @@
         }
       }
     },
+    "macLlama v%@ (%@)" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "macLlama v%1$@ (%2$@)"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "macLlama v%1$@ (%2$@)"
+          }
+        },
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "macLlama v%1$@ (%2$@)"
+          }
+        }
+      }
+    },
     "Markdown Settings" : {
       "extractionState" : "manual",
       "localizations" : {
@@ -822,10 +854,36 @@
       }
     },
     "New Chat with Ollama" : {
-
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ollamaと新しいチャット"
+          }
+        },
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ollama와 대화하기"
+          }
+        }
+      }
     },
     "New Foundation Model Chat" : {
-
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Foundation Modelと新しいチャット"
+          }
+        },
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Foundation Model과 대화하기"
+          }
+        }
+      }
     },
     "New macLlama is available!" : {
       "localizations" : {
