@@ -124,7 +124,7 @@ struct ChatInputView: View {
                 .tint(self.isThinking ? .gray : .accent)
                 .buttonStyle(.borderedProminent)
                 .frame(height: 40)
-                .keyboardShortcut(.return) //WHY cmd+return???? ¯\(°_o)/¯
+                .keyboardShortcut(.return, modifiers: .command)
             }
             .padding()
             .padding(.top, Units.normalGap * -1.5)
