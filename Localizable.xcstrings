@@ -474,6 +474,9 @@
         }
       }
     },
+    "Foundation Model" : {
+
+    },
     "General" : {
       "extractionState" : "manual",
       "localizations" : {
@@ -490,6 +493,9 @@
           }
         }
       }
+    },
+    "Hello, World!" : {
+
     },
     "Hide Advanced Options" : {
       "localizations" : {
@@ -814,6 +820,12 @@
           }
         }
       }
+    },
+    "New Chat with Ollama" : {
+
+    },
+    "New Foundation Model Chat" : {
+
     },
     "New macLlama is available!" : {
       "localizations" : {

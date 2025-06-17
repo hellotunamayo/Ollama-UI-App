@@ -43,8 +43,16 @@ struct macLlamaApp: App {
     var body: some Scene {
         WindowGroup {
             NavigationStack {
-                ConversationView()
-                    .navigationTitle("macLlama")
+                #if !DEBUG
+                if #available (macOS 26.0, *) {
+                    ServiceSelectView()
+                } else {
+                    ConversationView()
+                        .navigationTitle("macLlama")
+                }
+                #else
+                ServiceSelectView()
+                #endif
             }
             .environmentObject(serverStatus)
             .frame(minWidth: Units.appFrameMinWidth, idealWidth: Units.appFrameMinWidth,

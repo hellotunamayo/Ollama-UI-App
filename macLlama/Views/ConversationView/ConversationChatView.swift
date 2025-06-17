@@ -42,10 +42,6 @@ struct ConversationChatView: View {
     @State private var localPrefix: String = ""
     @State private var localSuffix: String = ""
     
-    //For debouncing (Save for later version)
-//    @State private var cancellableSet = Set<AnyCancellable>()
-//    @State private var timerPublisher: Timer.TimerPublisher? = nil
-    
     let chatService: OllamaChatService = OllamaChatService()
     let ollamaNetworkService: OllamaNetworkService = OllamaNetworkService()
     let ollamaProfilePicture: NSImage? = NSImage(named: "llama_gray")
@@ -300,28 +296,11 @@ extension ConversationChatView {
                 debugPrint("Generation Started")
                 #endif
                 
-                //Prepare resource for debouncing (Saving for later update)
-//                var count: Int = 0
-//                self.timerPublisher = Timer.publish(every: 0.3, on: .main, in: .common)
-//                self.timerPublisher?.autoconnect().sink { _ in
-//                    count += 1
-//                }.store(in: &self.cancellableSet)
-                
                 let stream = try await chatService.sendMessage(model: model, userInput: prompt, images: images, showThink: self.showThink)
                 for await update in stream {
                     let outputText = update
                     self.history[self.history.count - 1].message = outputText
-                    //Debouncing stream (Saving for later update)
-//                    if count % 2 == 0 {
-//                        let outputText = update
-//                        self.history[self.history.count - 1].message = outputText
-//                    }
                 }
-                
-                //Cancel timer (Saving for later update)
-//                self.timerPublisher?.connect().cancel()
-//                self.timerPublisher = nil
-                
                 #if DEBUG
                 debugPrint("Generation finished")
                 #endif
